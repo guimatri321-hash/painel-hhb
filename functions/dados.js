@@ -1,4 +1,4 @@
-// Guarda e devolve os dados do painel (financeiro/positivacao/estoque) num
+s// Guarda e devolve os dados do painel (financeiro/positivacao/estoque) num
 // "Netlify Blob" - um armazenamento simples compartilhado por todo mundo que
 // acessa o site, sem precisar de banco de dados separado.
 import { getStore } from "@netlify/blobs";
