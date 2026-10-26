@@ -32,6 +32,13 @@ export default async (req) => {
     });
   }
 
+  if (req.method === "DELETE") {
+    await store.delete("atual");
+    return new Response(JSON.stringify({ ok: true }), {
+      headers: { "Content-Type": "application/json" }
+    });
+  }
+
   return new Response("Method not allowed", { status: 405 });
 };
 
